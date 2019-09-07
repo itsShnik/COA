@@ -1,6 +1,7 @@
 # Notes
 
 ### Sample Program
+---
 ```verilog
 // Simulation of a Divide by 3 detector FSM
 /* 

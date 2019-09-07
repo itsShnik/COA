@@ -1,0 +1,47 @@
+NET M[0] LOC="p191";
+NET Q[0] LOC="p5";
+NET M[1] LOC="p190";
+NET Q[1] LOC="p7";
+NET M[2] LOC="p196";
+NET Q[2] LOC="p3";
+NET M[3] LOC="p194";
+NET Q[3] LOC="p4";
+NET M[4] LOC="p198";
+NET Q[4] LOC="p205";
+NET M[5] LOC="p197";
+NET Q[5] LOC="p2";
+NET load LOC="p28";
+
+NET clk LOC = "p76"; 
+
+NET reset LOC= "p24";
+
+NET P[0] LOC="p139";
+NET P[1] LOC="p140";
+NET P[2] LOC="p137";
+NET P[3] LOC="p138";
+NET P[4] LOC="p133";
+NET P[5] LOC="p135";
+NET P[6] LOC="p131";
+NET P[7] LOC="p132";
+NET P[8] LOC="p149";
+NET P[9] LOC="p150";
+NET P[10] LOC="p147";
+NET P[11] LOC="p148";
+
+
+#NET X[0] LOC="p181";
+#NET X[1] LOC="p176";
+#NET X[2] LOC="p172";
+#NET X[3] LOC="p175";
+#NET X[4] LOC="p169";
+#NET X[5] LOC="p168";
+#NET Y[0] LOC="p165";
+#NET Y[1] LOC="p166";
+#NET Y[2] LOC="p161";
+#NET Y[3] LOC="p162";
+#NET Y[4] LOC="p155";
+#NET Y[5] LOC="p156";
+
+
+NET slow_clk LOC= "p154";

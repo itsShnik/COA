@@ -1,0 +1,12 @@
+NET sel LOC="p191";
+
+NET clk LOC="p76";
+NET reset LOC="p196";
+NET slow_clock LOC="p139";
+NET cout LOC="p140";
+#NET out[2] LOC="p137";
+#NET out[3] LOC="p138";
+#NET out[4] LOC="p133";
+#NET out[5] LOC="p135";
+#NET out[6] LOC="p131";
+#NET out[7] LOC="p132";

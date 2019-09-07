@@ -1,0 +1,47 @@
+NET a[0] LOC="p191";
+NET b[0] LOC="p5";
+NET a[1] LOC="p190";
+NET b[1] LOC="p7";
+NET a[2] LOC="p196";
+NET b[2] LOC="p3";
+NET a[3] LOC="p194";
+NET b[3] LOC="p4";
+NET a[4] LOC="p198";
+NET b[4] LOC="p205";
+NET a[5] LOC="p197";
+NET b[5] LOC="p2";
+NET load LOC="p28";
+
+NET system_clk LOC = "p76"; 
+
+NET rst LOC= "p24";
+
+NET product[0] LOC="p139";
+NET product[1] LOC="p140";
+NET product[2] LOC="p137";
+NET product[3] LOC="p138";
+NET product[4] LOC="p133";
+NET product[5] LOC="p135";
+NET product[6] LOC="p131";
+NET product[7] LOC="p132";
+NET product[8] LOC="p149";
+NET product[9] LOC="p150";
+NET product[10] LOC="p147";
+NET product[11] LOC="p148";
+
+
+NET X[0] LOC="p181";
+NET X[1] LOC="p176";
+NET X[2] LOC="p172";
+NET X[3] LOC="p175";
+NET X[4] LOC="p169";
+NET X[5] LOC="p168";
+NET Y[0] LOC="p165";
+NET Y[1] LOC="p166";
+NET Y[2] LOC="p161";
+NET Y[3] LOC="p162";
+NET Y[4] LOC="p155";
+NET Y[5] LOC="p156";
+
+
+NET clk LOC= "p154";

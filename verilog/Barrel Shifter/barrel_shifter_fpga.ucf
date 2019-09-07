@@ -1,0 +1,31 @@
+NET in[0] LOC="p191";
+
+NET in[1] LOC="p190";
+
+NET in[2] LOC="p196";
+
+NET in[3] LOC="p194";
+
+NET in[4] LOC="p198";
+
+NET in[5] LOC="p197";
+
+NET in[6] LOC="p200";
+
+NET in[7] LOC="p199";
+
+NET shamt[0] LOC = "p5";
+NET shamt[1] LOC = "p7";
+NET shamt[2] LOC = "p3";
+
+NET dir LOC="p27";
+
+NET out[0] LOC="p139";
+NET out[1] LOC="p140";
+NET out[2] LOC="p137";
+NET out[3] LOC="p138";
+NET out[4] LOC="p133";
+NET out[5] LOC="p135";
+NET out[6] LOC="p131";
+NET out[7] LOC="p132";
+

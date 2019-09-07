@@ -15,40 +15,40 @@
 ##########Data Segment########################
 .data
 prompt:
-       .asciiz  "Enter two numbers: "
+	 .asciiz  "Enter two numbers: "
 sum_msg:
-       .asciiz "The sum is: "
+	 .asciiz "The sum is: "
 newline:
-       .asciiz "\n"
+	 .asciiz "\n"
 ###########Code Segment#####################
-       .text
-       .globl main
+	 .text
+	 .globl main
 main:
 
-       la $a0,prompt #loads $a0 with the address 
-       li $v0,4  #prints the string
-       syscall
+	 la $a0,prompt #loads $a0 with the address 
+	 li $v0,4  #prints the string
+	 syscall
 
-       li $v0,5  #reads first integer
-       syscall
-       move $t0, $v0 #result returned in $v0
+	 li $v0,5  #reads first integer
+	 syscall
+	 move $t0, $v0 #result returned in $v0
     
-       li $v0, 5 #reads second integer
-       syscall
-       move $t1, $v0 #result returned in $v0
-       
-       addu $t0, $t0, $t1
+	 li $v0, 5 #reads second integer
+	 syscall
+	 move $t1, $v0 #result returned in $v0
+	 
+	 addu $t0, $t0, $t1
 
-       la $a0,sum_msg
-       li $v0,4
-       syscall
+	 la $a0,sum_msg
+	 li $v0,4
+	 syscall
 
-       move $a0,$t0
-       li $v0,1 #prints the integer sum
-       syscall
+	 move $a0,$t0
+	 li $v0,1 #prints the integer sum
+	 syscall
    
-      #li $v0,10  #exit
-      #syscall
+	#li $v0,10  #exit
+	#syscall
 ```
 
 - Program to find the sum of first n natural numbers
@@ -60,9 +60,9 @@ Let’s tackle a recursive procedure that calculates factorial:
 int fact (int n)
 {
 	if (n < 1)
-		return (1);
+	     return (1);
 	else
-		return (n * fact(n – 1));
+	     return (n * fact(n – 1));
 }
 ```
 What is the MIPS assembly code?
@@ -78,35 +78,35 @@ fact:
 ```
 The first time fact is called, sw saves an address in the program that called fact. The next two instructions test whether n is less than 1, going to L1 if n ≥ 1.
 ```asm
-slti $t0,$a0,1 # test for n < 1
-beq $t0,$zero,L1 # if n >= 1, go to L1
+	slti $t0,$a0,1 # test for n < 1
+	beq $t0,$zero,L1 # if n >= 1, go to L1
 ```
 If n is less than 1, fact returns 1 by putting 1 into a value register: it adds 1 to 0 and places that sum in $v0. It then pops the two saved values off the stack and jumps to the return address:
 ```asm
-addi $v0,$zero,1 # return 1
-addi $sp,$sp,8 # pop 2 items off stack
-jr $ra # return to caller
+	addi $v0,$zero,1 # return 1
+	addi $sp,$sp,8 # pop 2 items off stack
+	jr $ra # return to caller
 ```
 Before popping two items off the stack, we could have loaded $a0 and $ra. Since $a0 and $ra don’t change when n is less than 1, we skip those instructions. If n is not less than 1, the argument n is decremented and then fact is called again with the decremented value:
 ```asm
 L1: 
-      addi $a0,$a0,–1 # n >= 1: argument gets (n – 1)
-      jal fact # call fact with (n –1)
-      
+	addi $a0,$a0,–1 # n >= 1: argument gets (n – 1)
+	jal fact # call fact with (n –1)
+	
 ```
 The next instruction is where fact returns. Now the old return address and old argument are restored, along with the stack pointer:
 ```asm
-lw $a0, 0($sp) # return from jal: restore argument n
-lw $ra, 4($sp) # restore the return address
-addi $sp, $sp, 8 # adjust stack pointer to pop 2 items
+	lw $a0, 0($sp) # return from jal: restore argument n
+	lw $ra, 4($sp) # restore the return address
+	addi $sp, $sp, 8 # adjust stack pointer to pop 2 items
 ```
 Next, the value register $v0 gets the product of old argument $a0 and the current value of the value register.
 ```asm
-mul $v0,$a0,$v0 # return n * fact (n – 1)
+	mul $v0,$a0,$v0 # return n * fact (n – 1)
 ```
 Finally, fact jumps again to the return address:
 ```asm
-jr $ra # return to the caller
+	jr $ra # return to the caller
 ```
 
 ### MIPS assembly language instruction set

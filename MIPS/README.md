@@ -15,7 +15,7 @@
 
 - Program to add two numbers
 
-```
+```assembly
 ##########Data Segment########################
 .data
 prompt:
@@ -57,7 +57,7 @@ main:
 
 - Program to find the sum of first n natural numbers
 
-```
+```assembly
  .data
 msg_input:   .asciiz "Enter the argument (positive number): "
 msg_arg:   .asciiz "The argument is: "

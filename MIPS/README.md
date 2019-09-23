@@ -38,9 +38,9 @@ A[300] = h + A[300];
 is compiled into
 
 ```assembly
-lw $t0,1200($t1) # Temporary reg $t0 gets A[300]
-add $t0,$s2,$t0 # Temporary reg $t0 gets h + A[300]
-sw $t0,1200($t1) # Stores h + A[300] back into A[300]
+lw $t0,1200($t1)		# Temporary reg $t0 gets A[300], I type
+add $t0,$s2,$t0		     #Temporary reg $t0 gets h + A[300], R type
+sw $t0,1200($t1)		# Stores h + A[300] back into A[300], I type
 ```
 
 And the corresponding instructions are given by the table:
@@ -50,6 +50,49 @@ And the corresponding instructions are given by the table:
 | 35 | 9 | 8 | | 1200 |  |
 | 0 | 18 | 8 | 8 | 0 | 32 |
 | 43 | 9 | 8 | | 1200 |  |
+
+#### J type:
+
+__Unconditional Jumps:__
+
+| 2 | address |
+| --- | --- |
+| 6 bits | 26 bits |
+
+For example,
+
+```assembly
+j 10000			 # go to location 10000
+```
+
+__Conditional Jumps:__
+
+| op | rs | rt | branch address |
+| --- | --- | --- | --- | 
+| 6 bits | 5 bits | 5 bits | 16 bits |
+
+For Example,
+
+```assembly
+bne $s0,$s1,Exit		# go to Exit if $s0 ≠ $s1
+```
+
+If addresses of the program had to fi t in this 16-bit fi eld, it would mean that no program could be bigger than 2<sup>16</sup> , which is far too small to be a realistic option today. An alternative would be to specify a register that would always be added
+to the branch address, so that a branch instruction would calculate the following:
+
+```
+		Program counter = Register + Branch address
+```
+
+This sum allows the program to be as large as 2<sup>32</sup> and still be able to use conditional branches, solving the branch address size problem. Then the question is, which register?
+
+The answer comes from seeing how conditional branches are used. Conditional branches are found in loops and in if statements, so they tend to branch to a nearby instruction. For example, about half of all conditional branches in SPEC benchmarks go to locations less than 16 instructions away. Since the program counter (PC) contains the address of the current instruction, we can branch within&plusmn;2<sup>15</sup> words of the current instruction if we use the PC as the register to be added to the address. Almost all loops and if statements are much smaller than 2 16 words, so the PC is the ideal choice.
+
+This form of branch addressing is called PC-relative addressing. As we shall see in Chapter 4, it is convenient for the hardware to increment the PC early to point to the next instruction. Hence, the MIPS address is actually relative to the address of the following instruction (PC  4) as opposed to the current instruction (PC). It is yet another example of making the common case fast, which in this case is addressing nearby instructions.
+
+Like most recent computers, MIPS uses PC-relative addressing for all conditional branches, because the destination of these instructions is likely to be close to the branch. On the other hand, jump-and-link instructions invoke procedures that have no reason to be near the call, so they normally use other forms of addressing. Hence, the MIPS architecture offers long addresses for procedure calls by using the J-type format for both jump and jump-and-link instructions.
+
+Since all MIPS instructions are 4 bytes long, MIPS stretches the distance of the branch by having PC-relative addressing refer to the number of words to the next instruction instead of the number of bytes. Thus, the 16-bit field can branch four times as far by interpreting the fi eld as a relative word address rather than as a relative byte address. Similarly, the 26-bit fi eld in jump instructions is also a word address, meaning that it represents a 28-bit byte address.
 
 ### MIPS assembly language instruction set
 ---

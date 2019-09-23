@@ -7,7 +7,7 @@ To multiply:
 	X = 123 and Y = -117
 
 In binary representations (8-bit):
-	X<sub>2</sub> = 01111011
+	X_2 = 01111011
 	Y_2 = 10001011
 
 Let X be the multliplier Q and Y be the multiplicand M, initialize an 8-bit binary number A with 0

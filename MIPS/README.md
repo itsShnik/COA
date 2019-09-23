@@ -94,6 +94,14 @@ Like most recent computers, MIPS uses PC-relative addressing for all conditional
 
 Since all MIPS instructions are 4 bytes long, MIPS stretches the distance of the branch by having PC-relative addressing refer to the number of words to the next instruction instead of the number of bytes. Thus, the 16-bit field can branch four times as far by interpreting the fi eld as a relative word address rather than as a relative byte address. Similarly, the 26-bit fi eld in jump instructions is also a word address, meaning that it represents a 28-bit byte address.
 
+### MIPS addressing mode summary
+
+1. __Immediate addressing__, where the operand is a constant within the instruction itself
+2. __Register addressing__, where the operand is a register
+3. __Base or displacement addressing__, where the operand is at the memory location whose address is the sum of a register and a constant in the instruction
+4. __PC-relative addressing__, where the branch address is the sum of the PC and a constant in the instruction
+5. __Pseudodirect addressing__, where the jump address is the 26 bits of the instruction concatenated with the upper bits of the PC
+
 ### MIPS assembly language instruction set
 ---
 ![Instruction Set](Images/mipsasmtable.jpg?raw=true)

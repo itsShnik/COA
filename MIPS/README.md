@@ -1,10 +1,17 @@
 # Notes
 
-### Cheat Sheet and Quick Tutorial
----
-- [Instruction Set](https://github.com/itsShnik/COA/tree/master/MIPS/CheatSheets/instructions.pdf)
+### Types of instructions
 
-- [Quick Tutorial](https://github.com/itsShnik/COA/tree/master/MIPS/CheatSheets/quick_tut.pdf)
+#### R type
+
+| op | rs | rt | rd | shamt | funct |
+| 6 bits | 5 bits | 5 bits | 5 bits | 5 bits | 6 bits |
+
+
+### MIPS assembly language instruction set
+---
+![Instruction Set](Images/mipsasmtable.jpg?raw=true)
+
 
 ### Sample Programs
 ---
@@ -109,8 +116,10 @@ Finally, fact jumps again to the return address:
 	jr $ra # return to the caller
 ```
 
-### MIPS assembly language instruction set
+### Cheat Sheet and Quick Tutorial
 ---
-![Instruction Set](Images/mipsasmtable.jpg?raw=true)
+- [Instruction Set](https://github.com/itsShnik/COA/tree/master/MIPS/CheatSheets/instructions.pdf)
+
+- [Quick Tutorial](https://github.com/itsShnik/COA/tree/master/MIPS/CheatSheets/quick_tut.pdf)
 
 

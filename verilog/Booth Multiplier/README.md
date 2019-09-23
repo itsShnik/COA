@@ -2,7 +2,7 @@
 
 To understand the Booth's algorithm for multiplication of numbers, let's take an example:
 
-```
+```md
 To multiply: 
 	X = 123 and Y = -117
 

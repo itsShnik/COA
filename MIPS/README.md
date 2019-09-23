@@ -2,9 +2,10 @@
 
 ### Types of instructions
 
-#### R type
+#### R type:
 
 | op | rs | rt | rd | shamt | funct |
+| --- | --- | --- | --- | --- | --- |
 | 6 bits | 5 bits | 5 bits | 5 bits | 5 bits | 6 bits |
 
 

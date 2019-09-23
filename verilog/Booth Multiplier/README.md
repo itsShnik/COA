@@ -2,7 +2,7 @@
 
 To understand the Booth's algorithm for multiplication of numbers, let's take an example:
 
-```markdown
+```md
 To multiply: 
 	X = 123 and Y = -117
 
@@ -44,7 +44,7 @@ The working of the algo is shown is the following table:
 | A = A + M |  10001111 | | |  Q<sub>0</sub>Q<sub>-1</sub> = 01 |
 | rt shift  |  11000111	| 11001001 | 0 | Answer given by AQ |
 
-```markdown
+```md
 The final result is a 16-bit number given by AQ:
 	P = 1100011111001001
 

@@ -24,7 +24,7 @@ For example add instructions (see in instruction set)
 Used by immediate and data transfer instructions
 
 | op | rs | rt | constant / address |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | 
 | 6 bits | 5 bits | 5 bits | 16 bits |
 
 Combined example of both R and I type:

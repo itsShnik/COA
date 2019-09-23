@@ -2,7 +2,7 @@
 
 To understand the Booth's algorithm for multiplication of numbers, let's take an example:
 
-```
+```md
 To multiply: 
 	X = 123 and Y = -117
 
@@ -27,7 +27,7 @@ The working of the algo is shown is the following table:
 | A = A - M |  01110101 | | |  Q<sub>0</sub>Q<sub>-1</sub> = 10 |
 | rt shift  |  00111010	| 10111101 | 1 | |
 | 			| 00111010 | 	10111101 |	  1		| |	 
-| rt shift  |  00011101	| 01011110 | 1 | Q<sub>0</sub>Q<sub>-1</sub> = 10 |
+| rt shift  |  00011101	| 01011110 | 1 | Q<sub>0</sub>Q<sub>-1</sub> = 11 |
 | 			| 	00011101	| 01011110 | 1 	| |	 
 | A = A + M  |  10101000 | | |  Q<sub>0</sub>Q<sub>-1</sub> = 01 |
 | rt shift  |  	11010100 | 00101111  | 0 | |
@@ -35,22 +35,19 @@ The working of the algo is shown is the following table:
 | A = A - M |  01001001 | | |  Q<sub>0</sub>Q<sub>-1</sub> = 10 |
 | rt shift  |  00100100 |  10010111 | 1 | |
 | 			| 00100100 |  10010111 | 1	| |	 
-| rt shift  |  00010010	| 01001011 | 1 | |
+| rt shift  |  00010010	| 01001011 | 1 | Q<sub>0</sub>Q<sub>-1</sub> = 11 |
 | 			| 00010010	| 01001011 | 1 | |	 
-| rt shift  |  00001001	| 00100101 | 1 | |
+| rt shift  |  00001001	| 00100101 | 1 | Q<sub>0</sub>Q<sub>-1</sub> = 11 |
 | 			| 00001001	| 00100101 | 1 | |	 
-| rt shift  |  00000100	| 10010010 | 1 | |
+| rt shift  |  00000100	| 10010010 | 1 | Q<sub>0</sub>Q<sub>-1</sub> = 11 |
 | 			| 00000100	| 10010010 | 1 | |	 
 | A = A + M |  10001111 | | |  Q<sub>0</sub>Q<sub>-1</sub> = 01 |
 | rt shift  |  11000111	| 11001001 | 0 | |
-| --- | --- | --- | --- | --- |
 
+```md
+The final result is a 16-bit number given by AQ0:
+	P = 1100011111001001
 
+It can easily be verified that P = -14391 in decimal representation which is the answer
 
-
-
-
-
-
-
-
+```

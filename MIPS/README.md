@@ -8,6 +8,48 @@
 | --- | --- | --- | --- | --- | --- |
 | 6 bits | 5 bits | 5 bits | 5 bits | 5 bits | 6 bits |
 
+_where,_
+
+- __op__: Basic operation of the instruction, traditionally called the opcode.
+- __rs__: The fi rst register source operand.
+- __rt__: The second register source operand.
+- __rd__: The register destination operand. It gets the result of the operation.
+- __shamt__: Shift amount.
+- __funct__: Function. This field, often called the function code, selects the specific variant of the operation in the op field.
+
+For example add instructions (see in instruction set)
+
+#### I type:
+
+Used by immediate and data transfer instructions
+
+| op | rs | rt | constant / address |
+| --- | --- | --- | --- | --- | --- |
+| 6 bits | 5 bits | 5 bits | 16 bits |
+
+Combined example of both R and I type:
+
+code statement:
+
+```C
+A[300] = h + A[300];
+```
+
+is compiled into
+
+```assembly
+lw $t0,1200($t1) # Temporary reg $t0 gets A[300]
+add $t0,$s2,$t0 # Temporary reg $t0 gets h + A[300]
+sw $t0,1200($t1) # Stores h + A[300] back into A[300]
+```
+
+And the corresponding instructions are given by the table:
+
+| op | rs | rt | rd | shamt / address | funct |
+| --- | --- | --- | --- | --- | --- |
+| 35 | 9 | 8 | | 1200 |  |
+| 0 | 18 | 8 | 8 | 0 | 32 |
+| 43 | 9 | 8 | | 1200 |  |
 
 ### MIPS assembly language instruction set
 ---

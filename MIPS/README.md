@@ -170,12 +170,9 @@ What is the MIPS assembly code?
 The parameter variable n corresponds to the argument register $a0. The compiled program starts with the label of the procedure and then saves two registers on the stack, the return address and $a0:
 ```asm
 fact:
-	addi
-	sw
-	sw
-	$sp, $sp, –8 # adjust stack for 2 items
-	$ra, 4($sp) # save the return address
-	$a0, 0($sp) # save the argument n
+	addi $sp, $sp, –8 # adjust stack for 2 items
+	sw	$ra, 4($sp) # save the return address
+	sw  $a0, 0($sp) # save the argument n
 ```
 The first time fact is called, sw saves an address in the program that called fact. The next two instructions test whether n is less than 1, going to L1 if n ≥ 1.
 ```asm

@@ -37,30 +37,30 @@ Move to the directory COA/RISC/RISC_1/ipcore_dir, and click on the file blk_mem_
 
 #### Arithmetic (opcode : 000)
 
-![arithmetic](arithmetic.png?raw=true)
+![arithmetic](Images/arithmetic.png?raw=true)
 
 #### Logic (opcode : 001)
 
-![logic](logic.png?raw=true)
+![logic](Images/logic.png?raw=true)
 
 #### Shift (opcode : 010)
 
-![shift](shift.png?raw=true)
+![shift](Images/shift.png?raw=true)
 
 #### Memory (opcode : 011)
 
-![memory](memory.png?raw=true)
+![memory](Images/memory.png?raw=true)
 
 #### Branch (opcode : 100)
 
-![branch](branch.png?raw=true)
+![branch](Images/branch.png?raw=true)
 
 
 ### CPU Design: Architecture
 
 The CPU architechture of RISC-Fuggit is inspired by the image shown below. We have slightly modified this architecture to obtain the required configurations.
 
-![architecture](architecture.png?raw=true)
+![architecture](Images/architecture.png?raw=true)
 
 ### Modules/Components
 

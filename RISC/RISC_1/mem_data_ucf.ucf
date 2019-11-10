@@ -1,0 +1,50 @@
+NET readData[0] LOC="p139";
+NET readData[1] LOC="p140";
+NET readData[2] LOC="p137";
+NET readData[3] LOC="p138";
+NET readData[4] LOC="p133";
+NET readData[5] LOC="p135";
+NET readData[6] LOC="p131";
+NET readData[7] LOC="p132";
+NET readData[8] LOC="p149";
+NET readData[9] LOC="p150";
+NET readData[10] LOC="p147";
+NET readData[11] LOC="p148";
+NET readData[12] LOC="p144";
+NET readData[13] LOC="p146";
+NET readData[14] LOC="p141";
+NET readData[15] LOC="p143";
+#NET readData[16] LOC="p181";
+#NET readData[17] LOC="p176";
+#NET readData[18] LOC="p172";
+#NET readData[19] LOC="p175";
+#NET readData[20] LOC="p169";
+#NET readData[21] LOC="p168";
+#NET readData[22] LOC="p167";
+#NET readData[23] LOC="p171";
+#NET readData[24] LOC="p165";
+#NET readData[25] LOC="p166";
+#NET readData[26] LOC="p161";
+#NET readData[27] LOC="p162";
+#NET readData[28] LOC="p155";
+#NET readData[29] LOC="p156";
+#NET readData[30] LOC="p152";
+#NET readData[31] LOC="p154";
+
+NET slo_clk LOC="p154";
+
+
+NET writeData[0] LOC="p191";
+NET writeData[1] LOC="p190";
+NET writeData[2] LOC="p196";
+NET writeData[3] LOC="p194";
+
+NET data_addr[0] LOC="p5";
+NET data_addr[1] LOC="p7";
+NET data_addr[2] LOC="p3";
+NET data_addr[3] LOC="p4";
+
+NET memWrite LOC="p197";
+NET clk LOC = "p76"; 
+
+#NET writeEnable LOC = "p191"

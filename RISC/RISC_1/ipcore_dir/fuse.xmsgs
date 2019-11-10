@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/Control.v" Line 61: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">6</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="568" delta="unknown" >"D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/Control.v" Line 64: Constant value is truncated to fit in &lt;<arg fmt="%d" index="1">6</arg>&gt; bits.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../RISCMain.v" Line 133: Port <arg fmt="%s" index="1">clk</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../InstructionFetch.v" Line 46: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">jump_value</arg>&gt;. Formal port size is <arg fmt="%d" index="2">25</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../InstructionFetch.v" Line 47: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">writeEnable</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../InstructionMemory.v" Line 38: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">wea</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/ALU.v" Line 60: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">c_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../RISCMain.v" Line 156: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">data_addr</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../DataMemory.v" Line 34: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">10</arg>-bit.
+</msg>
+
+</messages>
+

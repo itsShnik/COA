@@ -1,0 +1,2 @@
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "blk_mem_gen_v7_3.ngc" blk_mem_gen_v7_3.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o blk_mem_gen_v7_3_map.ncd blk_mem_gen_v7_3.ngd blk_mem_gen_v7_3.pcf 

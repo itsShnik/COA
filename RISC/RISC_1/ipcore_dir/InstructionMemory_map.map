@@ -1,0 +1,126 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'InstructionMemory'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off
+-c 100 -o InstructionMemory_map.ncd InstructionMemory.ngd InstructionMemory.pcf 
+Target Device  : xc3s400
+Target Package : pq208
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Mon Nov 04 14:55:24 2019
+
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal data_in<31> connected to top level port data_in<31>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<30> connected to top level port data_in<30>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<29> connected to top level port data_in<29>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<28> connected to top level port data_in<28>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<27> connected to top level port data_in<27>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<26> connected to top level port data_in<26>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<25> connected to top level port data_in<25>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<24> connected to top level port data_in<24>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<23> connected to top level port data_in<23>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<22> connected to top level port data_in<22>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<21> connected to top level port data_in<21>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<20> connected to top level port data_in<20>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<19> connected to top level port data_in<19>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<18> connected to top level port data_in<18>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<17> connected to top level port data_in<17>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<16> connected to top level port data_in<16>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<15> connected to top level port data_in<15>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<14> connected to top level port data_in<14>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<13> connected to top level port data_in<13>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<12> connected to top level port data_in<12>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<11> connected to top level port data_in<11>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<10> connected to top level port data_in<10>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<9> connected to top level port data_in<9>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<8> connected to top level port data_in<8>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<7> connected to top level port data_in<7>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<6> connected to top level port data_in<6>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<5> connected to top level port data_in<5>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<4> connected to top level port data_in<4>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<3> connected to top level port data_in<3>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<2> connected to top level port data_in<2>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<1> connected to top level port data_in<1>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<0> connected to top level port data_in<0>
+   has been removed.
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   32
+Logic Utilization:
+  Number of Slice Flip Flops:            32 out of   7,168    1%
+Logic Distribution:
+  Number of occupied Slices:             32 out of   3,584    1%
+    Number of Slices containing only related logic:      32 out of      32 100%
+    Number of Slices containing unrelated logic:          0 out of      32   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Number of bonded IOBs:                 33 out of     141   23%
+  Number of RAMB16s:                     16 out of      16  100%
+  Number of BUFGMUXs:                     1 out of       8   12%
+
+Average Fanout of Non-Clock Nets:                1.00
+
+Peak Memory Usage:  288 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   0 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "InstructionMemory_map.mrp" for details.

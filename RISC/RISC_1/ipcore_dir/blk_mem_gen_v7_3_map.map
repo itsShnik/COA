@@ -1,0 +1,236 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'blk_mem_gen_v7_3'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off
+-c 100 -o blk_mem_gen_v7_3_map.ncd blk_mem_gen_v7_3.ngd blk_mem_gen_v7_3.pcf 
+Target Device  : xc3s400
+Target Package : pq208
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Wed Oct 16 16:02:51 2019
+
+Mapping design into LUTs...
+WARNING:MapLib:701 - Signal clka connected to top level port clka has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15]
+   .ram.r/s3_init.ram/douta_n<0> connected to top level port douta<30> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15]
+   .ram.r/s3_init.ram/douta_n<1> connected to top level port douta<31> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14]
+   .ram.r/s3_init.ram/douta_n<0> connected to top level port douta<28> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14]
+   .ram.r/s3_init.ram/douta_n<1> connected to top level port douta<29> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13]
+   .ram.r/s3_init.ram/douta_n<0> connected to top level port douta<26> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13]
+   .ram.r/s3_init.ram/douta_n<1> connected to top level port douta<27> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12]
+   .ram.r/s3_init.ram/douta_n<0> connected to top level port douta<24> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12]
+   .ram.r/s3_init.ram/douta_n<1> connected to top level port douta<25> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11]
+   .ram.r/s3_init.ram/douta_n<0> connected to top level port douta<22> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11]
+   .ram.r/s3_init.ram/douta_n<1> connected to top level port douta<23> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10]
+   .ram.r/s3_init.ram/douta_n<0> connected to top level port douta<20> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10]
+   .ram.r/s3_init.ram/douta_n<1> connected to top level port douta<21> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].
+   ram.r/s3_init.ram/douta_n<0> connected to top level port douta<18> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].
+   ram.r/s3_init.ram/douta_n<1> connected to top level port douta<19> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].
+   ram.r/s3_init.ram/douta_n<0> connected to top level port douta<16> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].
+   ram.r/s3_init.ram/douta_n<1> connected to top level port douta<17> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].
+   ram.r/s3_init.ram/douta_n<0> connected to top level port douta<14> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].
+   ram.r/s3_init.ram/douta_n<1> connected to top level port douta<15> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].
+   ram.r/s3_init.ram/douta_n<0> connected to top level port douta<12> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].
+   ram.r/s3_init.ram/douta_n<1> connected to top level port douta<13> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].
+   ram.r/s3_init.ram/douta_n<0> connected to top level port douta<10> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].
+   ram.r/s3_init.ram/douta_n<1> connected to top level port douta<11> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].
+   ram.r/s3_init.ram/douta_n<0> connected to top level port douta<8> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].
+   ram.r/s3_init.ram/douta_n<1> connected to top level port douta<9> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].
+   ram.r/s3_init.ram/douta_n<0> connected to top level port douta<6> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].
+   ram.r/s3_init.ram/douta_n<1> connected to top level port douta<7> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].
+   ram.r/s3_init.ram/douta_n<0> connected to top level port douta<4> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].
+   ram.r/s3_init.ram/douta_n<1> connected to top level port douta<5> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].
+   ram.r/s3_init.ram/douta_n<0> connected to top level port douta<2> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].
+   ram.r/s3_init.ram/douta_n<1> connected to top level port douta<3> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].
+   ram.r/s3_init.ram/douta_n<0> connected to top level port douta<0> has been
+   removed.
+WARNING:MapLib:701 - Signal
+   U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].
+   ram.r/s3_init.ram/douta_n<1> connected to top level port douta<1> has been
+   removed.
+WARNING:MapLib:701 - Signal wea<0> connected to top level port wea<0> has been
+   removed.
+WARNING:MapLib:701 - Signal addra<2> connected to top level port addra<2> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<1> connected to top level port addra<1> has
+   been removed.
+WARNING:MapLib:701 - Signal addra<0> connected to top level port addra<0> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<31> connected to top level port dina<31> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<30> connected to top level port dina<30> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<29> connected to top level port dina<29> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<28> connected to top level port dina<28> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<27> connected to top level port dina<27> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<26> connected to top level port dina<26> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<25> connected to top level port dina<25> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<24> connected to top level port dina<24> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<23> connected to top level port dina<23> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<22> connected to top level port dina<22> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<21> connected to top level port dina<21> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<20> connected to top level port dina<20> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<19> connected to top level port dina<19> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<18> connected to top level port dina<18> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<17> connected to top level port dina<17> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<16> connected to top level port dina<16> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<15> connected to top level port dina<15> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<14> connected to top level port dina<14> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<13> connected to top level port dina<13> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<12> connected to top level port dina<12> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<11> connected to top level port dina<11> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<10> connected to top level port dina<10> has
+   been removed.
+WARNING:MapLib:701 - Signal dina<9> connected to top level port dina<9> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<8> connected to top level port dina<8> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<7> connected to top level port dina<7> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<6> connected to top level port dina<6> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<5> connected to top level port dina<5> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<4> connected to top level port dina<4> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<3> connected to top level port dina<3> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<2> connected to top level port dina<2> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<1> connected to top level port dina<1> has been
+   removed.
+WARNING:MapLib:701 - Signal dina<0> connected to top level port dina<0> has been
+   removed.
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+ERROR:Pack:198 - NCD was not produced.  All logic was removed from the design. 
+   This is usually due to having no input or output PAD connections in the
+   design and no nets or symbols marked as 'SAVE'.  You can either add PADs or
+   'SAVE' attributes to the design, or run 'map -u' to disable logic trimming in
+   the mapper.  For more information on trimming issues search the Xilinx
+   Answers database for "ERROR:Pack:198" and read the Master Answer Record for
+   MAP Trimming Issues.
+
+Mapping completed.
+See MAP report file "blk_mem_gen_v7_3_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :  69

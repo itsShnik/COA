@@ -1,0 +1,254 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+HWLAB16::  Mon Nov 04 15:35:55 2019
+
+par -w -intstyle ise -ol high -t 1 DataMemory_map.ncd DataMemory.ncd
+DataMemory.pcf 
+
+
+Constraints file: DataMemory.pcf.
+Loading device for application Rf_Device from file '3s400.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "DataMemory" is an NCD, version 3.2, device xc3s400, package pq208, speed -5
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.39 2013-10-13".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        1 out of 8      12%
+   Number of External IOBs                  77 out of 141    54%
+      Number of LOCed IOBs                  27 out of 77     35%
+
+   Number of RAMB16s                         2 out of 16     12%
+   Number of Slices                         27 out of 3584    1%
+      Number of SLICEMs                      0 out of 1792    0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 0 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:3abf410) REAL time: 1 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: readData<31>
+   	 Comp: readData<30>
+   	 Comp: readData<29>
+   	 Comp: readData<28>
+   	 Comp: readData<27>
+   	 Comp: readData<26>
+   	 Comp: readData<25>
+   	 Comp: readData<24>
+   	 Comp: readData<23>
+   	 Comp: readData<22>
+   	 Comp: readData<21>
+   	 Comp: readData<20>
+   	 Comp: readData<19>
+   	 Comp: readData<18>
+   	 Comp: readData<17>
+   	 Comp: readData<16>
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: writeData<31>
+   	 Comp: writeData<30>
+   	 Comp: writeData<29>
+   	 Comp: writeData<28>
+   	 Comp: writeData<27>
+   	 Comp: writeData<26>
+   	 Comp: writeData<25>
+   	 Comp: writeData<24>
+   	 Comp: writeData<23>
+   	 Comp: writeData<22>
+   	 Comp: writeData<21>
+   	 Comp: writeData<20>
+   	 Comp: writeData<19>
+   	 Comp: writeData<18>
+   	 Comp: writeData<17>
+   	 Comp: writeData<16>
+   	 Comp: writeData<15>
+   	 Comp: writeData<14>
+   	 Comp: writeData<13>
+   	 Comp: writeData<12>
+   	 Comp: writeData<11>
+   	 Comp: writeData<10>
+   	 Comp: writeData<9>
+   	 Comp: writeData<8>
+   	 Comp: writeData<7>
+   	 Comp: writeData<6>
+   	 Comp: writeData<5>
+   	 Comp: writeData<4>
+
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: data_addr<9>
+   	 Comp: data_addr<8>
+   	 Comp: data_addr<7>
+   	 Comp: data_addr<6>
+   	 Comp: data_addr<5>
+   	 Comp: data_addr<4>
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 77 IOs, 27 are locked and 50 are not locked. If you would like
+   to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:3abf410) REAL time: 1 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:3abf410) REAL time: 1 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+....
+Phase 4.2  Initial Clock and IO Placement (Checksum:3c6fcfd0) REAL time: 1 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:3c6fcfd0) REAL time: 1 secs 
+
+Phase 6.3  Local Placement Optimization
+....
+Phase 6.3  Local Placement Optimization (Checksum:36756243) REAL time: 1 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:36756243) REAL time: 1 secs 
+
+Phase 8.8  Global Placement
+..
+..
+Phase 8.8  Global Placement (Checksum:1da4925f) REAL time: 2 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:1da4925f) REAL time: 2 secs 
+
+Phase 10.18  Placement Optimization
+Phase 10.18  Placement Optimization (Checksum:916869e7) REAL time: 2 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:916869e7) REAL time: 2 secs 
+
+Total REAL time to Placer completion: 2 secs 
+Total CPU  time to Placer completion: 2 secs 
+Writing design to file DataMemory.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 250 unrouted;      REAL time: 2 secs 
+
+Phase  2  : 216 unrouted;      REAL time: 2 secs 
+
+Phase  3  : 22 unrouted;      REAL time: 2 secs 
+
+Phase  4  : 33 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+
+Updating file: DataMemory.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
+WARNING:Route:455 - CLK Net:slow_clk may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 3 secs 
+Total CPU time to Router completion: 2 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP |      BUFGMUX2| No   |   15 |  0.017     |  0.901      |
++---------------------+--------------+------+------+------------+-------------+
+|            slow_clk |         Local|      |    3 |  0.061     |  2.647      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.732ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     1.103ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 3 secs 
+Total CPU time to PAR completion: 3 secs 
+
+Peak Memory Usage:  298 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 4
+Number of info messages: 2
+
+Writing design to file DataMemory.ncd
+
+
+
+PAR done!

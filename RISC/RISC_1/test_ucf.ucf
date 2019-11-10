@@ -1,0 +1,6 @@
+NET data_out[0] LOC="p139";
+NET data_out[1] LOC="p140";
+NET data_out[2] LOC="p137";
+NET data_out[3] LOC="p138";
+NET data_out[4] LOC="p133";
+NET data_out[5] LOC="p135";

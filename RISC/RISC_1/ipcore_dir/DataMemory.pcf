@@ -1,0 +1,35 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Nov 04 15:35:53 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P76" LEVEL 1;
+COMP "readData<0>" LOCATE = SITE "P139" LEVEL 1;
+COMP "readData<1>" LOCATE = SITE "P140" LEVEL 1;
+COMP "readData<2>" LOCATE = SITE "P137" LEVEL 1;
+COMP "readData<3>" LOCATE = SITE "P138" LEVEL 1;
+COMP "readData<4>" LOCATE = SITE "P133" LEVEL 1;
+COMP "slo_clk" LOCATE = SITE "P154" LEVEL 1;
+COMP "readData<5>" LOCATE = SITE "P135" LEVEL 1;
+COMP "readData<6>" LOCATE = SITE "P131" LEVEL 1;
+COMP "readData<7>" LOCATE = SITE "P132" LEVEL 1;
+COMP "readData<8>" LOCATE = SITE "P149" LEVEL 1;
+COMP "readData<9>" LOCATE = SITE "P150" LEVEL 1;
+COMP "data_addr<0>" LOCATE = SITE "P5" LEVEL 1;
+COMP "data_addr<1>" LOCATE = SITE "P7" LEVEL 1;
+COMP "data_addr<2>" LOCATE = SITE "P3" LEVEL 1;
+COMP "data_addr<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "readData<10>" LOCATE = SITE "P147" LEVEL 1;
+COMP "readData<11>" LOCATE = SITE "P148" LEVEL 1;
+COMP "readData<12>" LOCATE = SITE "P144" LEVEL 1;
+COMP "readData<13>" LOCATE = SITE "P146" LEVEL 1;
+COMP "readData<14>" LOCATE = SITE "P141" LEVEL 1;
+COMP "writeData<0>" LOCATE = SITE "P191" LEVEL 1;
+COMP "readData<15>" LOCATE = SITE "P143" LEVEL 1;
+COMP "writeData<1>" LOCATE = SITE "P190" LEVEL 1;
+COMP "memWrite" LOCATE = SITE "P197" LEVEL 1;
+COMP "writeData<2>" LOCATE = SITE "P196" LEVEL 1;
+COMP "writeData<3>" LOCATE = SITE "P194" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

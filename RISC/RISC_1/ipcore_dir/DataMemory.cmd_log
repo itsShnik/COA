@@ -1,0 +1,32 @@
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "DataMemory.ngc" DataMemory.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o DataMemory_map.ncd DataMemory.ngd DataMemory.pcf 
+par -w -intstyle ise -ol high -t 1 DataMemory_map.ncd DataMemory.ncd DataMemory.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DataMemory.twx DataMemory.ncd -o DataMemory.twr DataMemory.pcf 
+bitgen -intstyle ise -f DataMemory.ut DataMemory.ncd 
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "E:/GROUP 16/RISC_1/mem_data_ucf.ucf" -p xc3s400-pq208-5 "DataMemory.ngc" DataMemory.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o DataMemory_map.ncd DataMemory.ngd DataMemory.pcf 
+par -w -intstyle ise -ol high -t 1 DataMemory_map.ncd DataMemory.ncd DataMemory.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DataMemory.twx DataMemory.ncd -o DataMemory.twr DataMemory.pcf 
+bitgen -intstyle ise -f DataMemory.ut DataMemory.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "E:/GROUP 16/RISC_1/mem_data_ucf.ucf" -p xc3s400-pq208-5 "DataMemory.ngc" DataMemory.ngd  
+xst -intstyle ise -ifn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.xst" -ofn "E:/GROUP 16/RISC_1/ipcore_dir/DataMemory.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "E:/GROUP 16/RISC_1/mem_data_ucf.ucf" -p xc3s400-pq208-5 "DataMemory.ngc" DataMemory.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o DataMemory_map.ncd DataMemory.ngd DataMemory.pcf 
+par -w -intstyle ise -ol high -t 1 DataMemory_map.ncd DataMemory.ncd DataMemory.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DataMemory.twx DataMemory.ncd -o DataMemory.twr DataMemory.pcf 
+bitgen -intstyle ise -f DataMemory.ut DataMemory.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "E:/GROUP 16/RISC_1/mem_data_ucf.ucf" -p xc3s400-pq208-5 "DataMemory.ngc" DataMemory.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o DataMemory_map.ncd DataMemory.ngd DataMemory.pcf 
+par -w -intstyle ise -ol high -t 1 DataMemory_map.ncd DataMemory.ncd DataMemory.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DataMemory.twx DataMemory.ncd -o DataMemory.twr DataMemory.pcf 
+bitgen -intstyle ise -f DataMemory.ut DataMemory.ncd 

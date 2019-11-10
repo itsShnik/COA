@@ -1,0 +1,383 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'InstructionMemory'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off
+-c 100 -o InstructionMemory_map.ncd InstructionMemory.ngd InstructionMemory.pcf 
+Target Device  : xc3s400
+Target Package : pq208
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Mon Nov 04 14:55:24 2019
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   32
+Logic Utilization:
+  Number of Slice Flip Flops:            32 out of   7,168    1%
+Logic Distribution:
+  Number of occupied Slices:             32 out of   3,584    1%
+    Number of Slices containing only related logic:      32 out of      32 100%
+    Number of Slices containing unrelated logic:          0 out of      32   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Number of bonded IOBs:                 33 out of     141   23%
+  Number of RAMB16s:                     16 out of      16  100%
+  Number of BUFGMUXs:                     1 out of       8   12%
+
+Average Fanout of Non-Clock Nets:                1.00
+
+Peak Memory Usage:  288 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   0 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal data_in<31> connected to top level port data_in<31>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<30> connected to top level port data_in<30>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<29> connected to top level port data_in<29>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<28> connected to top level port data_in<28>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<27> connected to top level port data_in<27>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<26> connected to top level port data_in<26>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<25> connected to top level port data_in<25>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<24> connected to top level port data_in<24>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<23> connected to top level port data_in<23>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<22> connected to top level port data_in<22>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<21> connected to top level port data_in<21>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<20> connected to top level port data_in<20>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<19> connected to top level port data_in<19>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<18> connected to top level port data_in<18>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<17> connected to top level port data_in<17>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<16> connected to top level port data_in<16>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<15> connected to top level port data_in<15>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<14> connected to top level port data_in<14>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<13> connected to top level port data_in<13>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<12> connected to top level port data_in<12>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<11> connected to top level port data_in<11>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<10> connected to top level port data_in<10>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<9> connected to top level port data_in<9>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<8> connected to top level port data_in<8>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<7> connected to top level port data_in<7>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<6> connected to top level port data_in<6>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<5> connected to top level port data_in<5>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<4> connected to top level port data_in<4>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<3> connected to top level port data_in<3>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<2> connected to top level port data_in<2>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<1> connected to top level port data_in<1>
+   has been removed.
+WARNING:MapLib:701 - Signal data_in<0> connected to top level port data_in<0>
+   has been removed.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network writeEnable has no load.
+INFO:LIT:395 - The above info message is repeated 3 more times for the following
+   (max. 5 shown):
+   instruction_addr<2>,
+   instruction_addr<1>,
+   instruction_addr<0>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:564 - The following environment variables are currently set:
+INFO:MapLib:591 - XIL_MAP_LOCWARN 	Value: 1
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  64 block(s) removed
+   3 block(s) optimized away
+  64 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "data_in<0>" is unused and has been removed.
+ Unused block "data_in<0>" (PAD) removed.
+The signal "data_in<10>" is unused and has been removed.
+ Unused block "data_in<10>" (PAD) removed.
+The signal "data_in<11>" is unused and has been removed.
+ Unused block "data_in<11>" (PAD) removed.
+The signal "data_in<12>" is unused and has been removed.
+ Unused block "data_in<12>" (PAD) removed.
+The signal "data_in<13>" is unused and has been removed.
+ Unused block "data_in<13>" (PAD) removed.
+The signal "data_in<14>" is unused and has been removed.
+ Unused block "data_in<14>" (PAD) removed.
+The signal "data_in<15>" is unused and has been removed.
+ Unused block "data_in<15>" (PAD) removed.
+The signal "data_in<16>" is unused and has been removed.
+ Unused block "data_in<16>" (PAD) removed.
+The signal "data_in<17>" is unused and has been removed.
+ Unused block "data_in<17>" (PAD) removed.
+The signal "data_in<18>" is unused and has been removed.
+ Unused block "data_in<18>" (PAD) removed.
+The signal "data_in<19>" is unused and has been removed.
+ Unused block "data_in<19>" (PAD) removed.
+The signal "data_in<1>" is unused and has been removed.
+ Unused block "data_in<1>" (PAD) removed.
+The signal "data_in<20>" is unused and has been removed.
+ Unused block "data_in<20>" (PAD) removed.
+The signal "data_in<21>" is unused and has been removed.
+ Unused block "data_in<21>" (PAD) removed.
+The signal "data_in<22>" is unused and has been removed.
+ Unused block "data_in<22>" (PAD) removed.
+The signal "data_in<23>" is unused and has been removed.
+ Unused block "data_in<23>" (PAD) removed.
+The signal "data_in<24>" is unused and has been removed.
+ Unused block "data_in<24>" (PAD) removed.
+The signal "data_in<25>" is unused and has been removed.
+ Unused block "data_in<25>" (PAD) removed.
+The signal "data_in<26>" is unused and has been removed.
+ Unused block "data_in<26>" (PAD) removed.
+The signal "data_in<27>" is unused and has been removed.
+ Unused block "data_in<27>" (PAD) removed.
+The signal "data_in<28>" is unused and has been removed.
+ Unused block "data_in<28>" (PAD) removed.
+The signal "data_in<29>" is unused and has been removed.
+ Unused block "data_in<29>" (PAD) removed.
+The signal "data_in<2>" is unused and has been removed.
+ Unused block "data_in<2>" (PAD) removed.
+The signal "data_in<30>" is unused and has been removed.
+ Unused block "data_in<30>" (PAD) removed.
+The signal "data_in<31>" is unused and has been removed.
+ Unused block "data_in<31>" (PAD) removed.
+The signal "data_in<3>" is unused and has been removed.
+ Unused block "data_in<3>" (PAD) removed.
+The signal "data_in<4>" is unused and has been removed.
+ Unused block "data_in<4>" (PAD) removed.
+The signal "data_in<5>" is unused and has been removed.
+ Unused block "data_in<5>" (PAD) removed.
+The signal "data_in<6>" is unused and has been removed.
+ Unused block "data_in<6>" (PAD) removed.
+The signal "data_in<7>" is unused and has been removed.
+ Unused block "data_in<7>" (PAD) removed.
+The signal "data_in<8>" is unused and has been removed.
+ Unused block "data_in<8>" (PAD) removed.
+The signal "data_in<9>" is unused and has been removed.
+ Unused block "data_in<9>" (PAD) removed.
+The signal "data_in_0_IBUF" is unused and has been removed.
+ Unused block "data_in_0_IBUF" (BUF) removed.
+The signal "data_in_10_IBUF" is unused and has been removed.
+ Unused block "data_in_10_IBUF" (BUF) removed.
+The signal "data_in_11_IBUF" is unused and has been removed.
+ Unused block "data_in_11_IBUF" (BUF) removed.
+The signal "data_in_12_IBUF" is unused and has been removed.
+ Unused block "data_in_12_IBUF" (BUF) removed.
+The signal "data_in_13_IBUF" is unused and has been removed.
+ Unused block "data_in_13_IBUF" (BUF) removed.
+The signal "data_in_14_IBUF" is unused and has been removed.
+ Unused block "data_in_14_IBUF" (BUF) removed.
+The signal "data_in_15_IBUF" is unused and has been removed.
+ Unused block "data_in_15_IBUF" (BUF) removed.
+The signal "data_in_16_IBUF" is unused and has been removed.
+ Unused block "data_in_16_IBUF" (BUF) removed.
+The signal "data_in_17_IBUF" is unused and has been removed.
+ Unused block "data_in_17_IBUF" (BUF) removed.
+The signal "data_in_18_IBUF" is unused and has been removed.
+ Unused block "data_in_18_IBUF" (BUF) removed.
+The signal "data_in_19_IBUF" is unused and has been removed.
+ Unused block "data_in_19_IBUF" (BUF) removed.
+The signal "data_in_1_IBUF" is unused and has been removed.
+ Unused block "data_in_1_IBUF" (BUF) removed.
+The signal "data_in_20_IBUF" is unused and has been removed.
+ Unused block "data_in_20_IBUF" (BUF) removed.
+The signal "data_in_21_IBUF" is unused and has been removed.
+ Unused block "data_in_21_IBUF" (BUF) removed.
+The signal "data_in_22_IBUF" is unused and has been removed.
+ Unused block "data_in_22_IBUF" (BUF) removed.
+The signal "data_in_23_IBUF" is unused and has been removed.
+ Unused block "data_in_23_IBUF" (BUF) removed.
+The signal "data_in_24_IBUF" is unused and has been removed.
+ Unused block "data_in_24_IBUF" (BUF) removed.
+The signal "data_in_25_IBUF" is unused and has been removed.
+ Unused block "data_in_25_IBUF" (BUF) removed.
+The signal "data_in_26_IBUF" is unused and has been removed.
+ Unused block "data_in_26_IBUF" (BUF) removed.
+The signal "data_in_27_IBUF" is unused and has been removed.
+ Unused block "data_in_27_IBUF" (BUF) removed.
+The signal "data_in_28_IBUF" is unused and has been removed.
+ Unused block "data_in_28_IBUF" (BUF) removed.
+The signal "data_in_29_IBUF" is unused and has been removed.
+ Unused block "data_in_29_IBUF" (BUF) removed.
+The signal "data_in_2_IBUF" is unused and has been removed.
+ Unused block "data_in_2_IBUF" (BUF) removed.
+The signal "data_in_30_IBUF" is unused and has been removed.
+ Unused block "data_in_30_IBUF" (BUF) removed.
+The signal "data_in_31_IBUF" is unused and has been removed.
+ Unused block "data_in_31_IBUF" (BUF) removed.
+The signal "data_in_3_IBUF" is unused and has been removed.
+ Unused block "data_in_3_IBUF" (BUF) removed.
+The signal "data_in_4_IBUF" is unused and has been removed.
+ Unused block "data_in_4_IBUF" (BUF) removed.
+The signal "data_in_5_IBUF" is unused and has been removed.
+ Unused block "data_in_5_IBUF" (BUF) removed.
+The signal "data_in_6_IBUF" is unused and has been removed.
+ Unused block "data_in_6_IBUF" (BUF) removed.
+The signal "data_in_7_IBUF" is unused and has been removed.
+ Unused block "data_in_7_IBUF" (BUF) removed.
+The signal "data_in_8_IBUF" is unused and has been removed.
+ Unused block "data_in_8_IBUF" (BUF) removed.
+The signal "data_in_9_IBUF" is unused and has been removed.
+ Unused block "data_in_9_IBUF" (BUF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		InstMem/XST_GND
+VCC 		InstMem/XST_VCC
+GND 		XST_GND
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| data_out<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<8>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<9>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<10>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<11>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<12>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<13>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<14>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<15>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<16>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<17>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<18>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<19>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<20>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<21>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<22>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<23>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<24>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<25>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<26>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<27>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<28>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<29>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<30>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| data_out<31>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

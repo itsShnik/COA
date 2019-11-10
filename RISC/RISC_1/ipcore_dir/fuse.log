@@ -1,0 +1,76 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/main_tb_isim_beh.exe" -prj "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/main_tb_beh.prj" "work.main_tb" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/IM1.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/carryLookaheadAdder.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/arrayMultiplier.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../ProgramCounter.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/hybridAdder.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/DM.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/barrel_shift_register.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/arrayMultiplierSigned.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../InstructionMemory.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../writeBack.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../Registers.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/inputDecider.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/Control.v" into library work
+WARNING:HDLCompiler:568 - "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/Control.v" Line 61: Constant value is truncated to fit in <6> bits.
+WARNING:HDLCompiler:568 - "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/Control.v" Line 64: Constant value is truncated to fit in <6> bits.
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/branchLogic.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/ALU.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../InstructionFetch.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../InstructionDecoder.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../DataMemory.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../RISCMain.v" into library work
+Analyzing Verilog file "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../main_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../RISCMain.v" Line 133: Port clk is not connected to this instance
+WARNING:HDLCompiler:189 - "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../InstructionFetch.v" Line 46: Size mismatch in connection of port <jump_value>. Formal port size is 25-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../InstructionFetch.v" Line 47: Size mismatch in connection of port <writeEnable>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../InstructionMemory.v" Line 38: Size mismatch in connection of port <wea>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/ALU.v" Line 60: Size mismatch in connection of port <c_in>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../RISCMain.v" Line 156: Size mismatch in connection of port <data_addr>. Formal port size is 10-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/../DataMemory.v" Line 34: Size mismatch in connection of port <addra>. Formal port size is 5-bit while actual signal size is 10-bit.
+Completed static elaboration
+Compiling module ProgramCounter
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module IM1
+Compiling module InstructionMemory
+Compiling module InstructionFetch
+Compiling module InstructionDecoder
+Compiling module Registers
+Compiling module Control
+Compiling module inputDecider
+Compiling module carryLookaheadAdder
+Compiling module hybridAdder
+Compiling module arrayMultiplier_default
+Compiling module arrayMultiplierSigned
+Compiling module mux
+Compiling module shifter_16
+Compiling module shifter_8
+Compiling module shifter_4
+Compiling module shifter_2
+Compiling module shifter_1
+Compiling module barrel_shift_register
+Compiling module ALU
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module DM
+Compiling module DataMemory
+Compiling module branchlogicc
+Compiling module writeBack
+Compiling module RISCMain
+Compiling module main_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 34 Verilog Units
+Built simulation executable D:/Amatya Sharma/COA/Lab/ASG10_4_11/RISC_1/ipcore_dir/main_tb_isim_beh.exe
+Fuse Memory Usage: 33924 KB
+Fuse CPU Usage: 827 ms

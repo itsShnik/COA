@@ -1,0 +1,399 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: DataMemory.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DataMemory.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DataMemory"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : DataMemory
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "mem_data.v" in library work
+Compiling verilog file "../DataMemory.v" in library work
+Module <mem_data> compiled
+Module <DataMemory> compiled
+No errors in compilation
+Analysis of file <"DataMemory.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <DataMemory> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <DataMemory>.
+WARNING:Xst:2211 - "mem_data.v" line 47: Instantiating black box module <mem_data>.
+Module <DataMemory> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DataMemory>.
+    Related source file is "../DataMemory.v".
+WARNING:Xst:647 - Input <memRead> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <instruction_addrr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <data_in> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 27-bit up counter for signal <counter>.
+    Found 27-bit comparator greatequal for signal <counter$cmp_ge0000> created at line 42.
+    Found 1-bit register for signal <slow_clk>.
+    Found 27-bit comparator less for signal <slow_clk$cmp_lt0000> created at line 43.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <DataMemory> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 2
+ 27-bit comparator greatequal                          : 1
+ 27-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <mem_data.ngc>.
+Loading core <mem_data> for timing and area information for instance <dataMem>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 2
+ 27-bit comparator greatequal                          : 1
+ 27-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram of type RAMB16_S18_S18 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp18x18.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp18x18.ram of type RAMB16_S18_S18 has been replaced by RAMB16
+
+Optimizing unit <DataMemory> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DataMemory, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DataMemory.ngr
+Top Level Output File Name         : DataMemory
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 78
+
+Cell Usage :
+# BELS                             : 135
+#      GND                         : 4
+#      INV                         : 6
+#      LUT1                        : 34
+#      LUT2                        : 9
+#      LUT3                        : 3
+#      MUXCY                       : 50
+#      VCC                         : 2
+#      XORCY                       : 27
+# FlipFlops/Latches                : 28
+#      FDR                         : 28
+# RAMS                             : 2
+#      RAMB16                      : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 76
+#      IBUF                        : 43
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                       28  out of   3584     0%  
+ Number of Slice Flip Flops:             28  out of   7168     0%  
+ Number of 4 input LUTs:                 52  out of   7168     0%  
+ Number of IOs:                          78
+ Number of bonded IOBs:                  77  out of    141    54%  
+ Number of BRAMs:                         2  out of     16    12%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                                                                                                                          | Load  |
+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+slow_clk                           | NONE(dataMem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram)| 2     |
+dataMem/N1                         | NONE(dataMem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram)| 2     |
+clk                                | BUFGP                                                                                                                                                                                                                                          | 28    |
+-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.133ns (Maximum Frequency: 163.062MHz)
+   Minimum input arrival time before clock: 1.817ns
+   Maximum output required time after clock: 6.306ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.133ns (frequency: 163.062MHz)
+  Total number of paths / destination ports: 911 / 55
+-------------------------------------------------------------------------
+Delay:               6.133ns (Levels of Logic = 14)
+  Source:            counter_7 (FF)
+  Destination:       slow_clk (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter_7 to slow_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.626   1.040  counter_7 (counter_7)
+     LUT1:I0->O            1   0.479   0.000  Mcompar_counter_cmp_ge0000_cy<0>_0_rt (Mcompar_counter_cmp_ge0000_cy<0>_0_rt)
+     MUXCY:S->O            1   0.435   0.000  Mcompar_counter_cmp_ge0000_cy<0>_0 (Mcompar_counter_cmp_ge0000_cy<0>1)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_counter_cmp_ge0000_cy<1>_0 (Mcompar_counter_cmp_ge0000_cy<1>1)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_counter_cmp_ge0000_cy<2>_0 (Mcompar_counter_cmp_ge0000_cy<2>1)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_counter_cmp_ge0000_cy<3>_0 (Mcompar_counter_cmp_ge0000_cy<3>1)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_counter_cmp_ge0000_cy<4>_0 (Mcompar_counter_cmp_ge0000_cy<4>1)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_counter_cmp_ge0000_cy<5>_0 (Mcompar_counter_cmp_ge0000_cy<5>1)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_counter_cmp_ge0000_cy<6>_0 (Mcompar_counter_cmp_ge0000_cy<6>1)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_counter_cmp_ge0000_cy<7>_0 (Mcompar_counter_cmp_ge0000_cy<7>1)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_counter_cmp_ge0000_cy<8>_0 (Mcompar_counter_cmp_ge0000_cy<8>1)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_counter_cmp_ge0000_cy<9>_0 (Mcompar_counter_cmp_ge0000_cy<9>1)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_counter_cmp_ge0000_cy<10>_0 (Mcompar_counter_cmp_ge0000_cy<10>1)
+     MUXCY:CI->O           1   0.264   0.681  Mcompar_counter_cmp_ge0000_cy<11>_0 (Mcompar_counter_cmp_ge0000_cy<11>)
+     INV:I->O              1   0.479   0.681  Mcompar_counter_cmp_ge0000_cy<11>_inv_INV_0 (slow_clk_cmp_lt0000)
+     FDR:R                     0.892          slow_clk
+    ----------------------------------------
+    Total                      6.133ns (3.731ns logic, 2.402ns route)
+                                       (60.8% logic, 39.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'slow_clk'
+  Total number of paths / destination ports: 52 / 52
+-------------------------------------------------------------------------
+Offset:              1.817ns (Levels of Logic = 2)
+  Source:            writeData<16> (PAD)
+  Destination:       dataMem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram (RAM)
+  Destination Clock: slow_clk rising
+
+  Data Path: writeData<16> to dataMem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.681  writeData_16_IBUF (writeData_16_IBUF)
+     begin scope: 'dataMem'
+     begin scope: 'U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram'
+     RAMB16:DIA15              0.421          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram
+    ----------------------------------------
+    Total                      1.817ns (1.136ns logic, 0.681ns route)
+                                       (62.5% logic, 37.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              6.306ns (Levels of Logic = 1)
+  Source:            slow_clk (FF)
+  Destination:       slo_clk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: slow_clk to slo_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.626   0.771  slow_clk (slow_clk)
+     OBUF:I->O                 4.909          slo_clk_OBUF (slo_clk)
+    ----------------------------------------
+    Total                      6.306ns (5.535ns logic, 0.771ns route)
+                                       (87.8% logic, 12.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.15 secs
+ 
+--> 
+
+Total memory usage is 257720 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

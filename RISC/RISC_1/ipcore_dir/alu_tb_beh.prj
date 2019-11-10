@@ -1,0 +1,8 @@
+verilog work "../../Asg10/Asg10/carryLookaheadAdder.v"
+verilog work "../../Asg10/Asg10/arrayMultiplier.v"
+verilog work "../../Asg10/Asg10/hybridAdder.v"
+verilog work "../../Asg10/Asg10/barrel_shift_register.v"
+verilog work "../../Asg10/Asg10/arrayMultiplierSigned.v"
+verilog work "../../Asg10/Asg10/ALU.v"
+verilog work "../../Asg10/Asg10/ALU_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

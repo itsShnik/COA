@@ -1,6 +1,8 @@
+(I made RISC-Fuggit a separate repository to separate the term project from the notes. You can find the notes for MIPS and Verilog in the other repository [here](https://github.com/itsShnik/COA))
+
 # RISC-Fuggit
 
-RISC-Fuggit is the name given to the reduced instruction set computer, designed, implemented and programmed by @itsShnik and @Akurath6555. We developed a single cycle instruction execution unit for RISC-Fuggit. The CPU was programmed in verilog with the __Xilinx ISE 14.7__ and was deployed on the FPGA Spartan 3. Below are the instructions to setup and use this CPU.
+RISC-Fuggit is the name given to the reduced instruction set computer, designed, implemented and programmed by [Nikhil](https://github.com/itsShnik) and [Amatya](https://github.com/Akurath65555). We developed a single cycle instruction execution unit for RISC-Fuggit. The CPU was programmed in verilog with the __Xilinx ISE 14.7__ and was deployed on the FPGA Spartan 3. Below are the instructions to setup and use this CPU.
 
 ## Instruction Set Architecture
 
@@ -67,16 +69,16 @@ The CPU architechture of RISC-Fuggit is inspired by the image shown below. We ha
 RISC-Fuggit is made of the following components/modules. These modules are instantiated in the main module RISC_main in the following order.
 
 1. __Instruction Fetch__:
-	1.1. __PC Incrementer__: Increments the next programcounter to either the jump value (L or ra) oradds one to the current program counter. Workssynchronously with the clock.
-	1.2. __Instruction Memory__: Loads the instructions atthe current program counter from the BRAMinstantiated for instructions only.
+	1.1. __PC Incrementer__: Increments the next program counter either by the jump value (L or ra) or one to the current program counter. Works synchronously with the clock.
+	1.2. __Instruction Memory__: Loads the instructions atthe current program counter from the BRAM instantiated for instructions only.
 2. __Instruction Decoder__: Segments the instruction into interpreteble register addresse, jump values,immediate addresses, operation code and immediatevalues/shift amounts.
-3. __Register Bank__: Stores 32 registers each of 32 bits. Writes (on negedge) in values of the inputregisters on write enable signal. Always outputsvalues of registers read from instructions.
-4. __Control__: Depending on the operation it activatesvarious modules/hardwares with differentfunctionalities (all flags defined later).
-5. __Input Decider__: Decides between immediate andregister values depending on the instruction type.
-6. __ALU__: Main arithmetic and logical unit of theprocessor, employs hierarchical designincorporating hybrid adders and array multipliers for both signed and unsigned operations.
-7. __Data Memory__: Higher level module for BRAMinstantiated for data memory.
-8. __Branch Logic__: Depending on the type of the branchinstruction, returns the jump value (directaddress of the next instruction).
-9. __Write Back__: Chooses between ALU output and memoryoutput to write back to destination register.
+3. __Register Bank__: Stores 32 registers each of 32 bits. Writes (on negedge) in values of the input registers on write enable signal. Always outputs values of registers read from instructions.
+4. __Control__: Depending on the operation it activates various modules/hardwares with different functionalities (all flags defined later).
+5. __Input Decider__: Decides between immediate and register values depending on the instruction type.
+6. __ALU__: Main arithmetic and logical unit of the processor, employs hierarchical design incorporating hybrid adders and array multipliers for both signed and unsigned operations.
+7. __Data Memory__: Higher level module for BRAM instantiated for data memory.
+8. __Branch Logic__: Depending on the type of the branch instruction, returns the jump value (relative address of the next instruction).
+9. __Write Back__: Chooses between ALU output and memory output to write back to destination register.
 
 ### Flags/Controls:
 
@@ -84,10 +86,10 @@ RISC-Fuggit is made of the following components/modules. These modules are insta
 2. __memRead__: use when data memory is to be read
 3. __memToReg__ : decide b/w alu ou/p and data memory o/p
 4. __memWrite__ : select line to data memory
-5. __aluSrc__ : differentiates between register andconstant for ALU
+5. __aluSrc__ : differentiates between register and constant for ALU
 6. __regWrite__ : write to reg or not (if write :synchronous)
 7. __regBranch__ : to decide whether jump to (rs) or L
-8. __raWrite__ : to decide if it call is used , writeback to ra register
+8. __raWrite__ : to decide if it call is used , write back to ra register
 9. __isMult__ : to write back hi and lo.
 
 ### Assumptions
